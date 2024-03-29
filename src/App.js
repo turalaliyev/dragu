@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { HeroSeaction } from "./components/HeroSection";
+import { AboutSection } from "./components/AboutSection";
+import { StorySection } from "./components/StorySection";
+import { Tokenomics } from "./components/Tokenomics";
+import { Separator } from "./components/Separator";
+
+// import
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroSeaction />
+      <Separator id="WHO" />
+      <AboutSection />
+      <Separator id="TOK" />
+      <StorySection />
+      <Separator id="STATS" />
+      <Tokenomics />
+      <Separator id="STATS" />
     </div>
   );
 }
